@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
 </head>
-
 <body>
-
     <header class="header">
-        <h1>Password Generator</h1>
-
-
+        <h1>PASSWORD GENERATOR</h1>
     </header>
+    <section class="content">
+      
+        <div class="passwordBox" aria-placeholder="nada">
 
-    <div class="content">
-        <h2>
-            Create a
-        </h2>
-        <p>this is a big text im gonna write like randonly words if i was tiu create a new version. </p>
-
-    </div>
-
-
-
-
-
-
+            <h2>Message Information:</h2>
+            <!-- <form> -->
+                
+                <p>Your Message: </p>
+                <h6 id="yourMessage">
+                </h6>
+                <p>Number of characters allowed: </p>
+                <h6 id="messageLength">
+                </h6>
+                <p>Number of characters written: </p>
+                <h6 id="charactersCount">
+                </h6>
+                <p>Number of characters remaining: </p>
+                <h6 id="remainingCharacters">
+                </h6>
+            <!-- </form> -->
+            <br>
+            <button class ="button" onclick='myFunction()'>Click to Start</button>
+        </div>
+        <footer>
+            <p><span class="credits-footer">© 2020  Designed by <a
+                        href="https://aafernands.github.io/">AlexFernandes</a></span></p>
+        </footer>
+    </section>
+    <script src="index.js"></script>
 </body>
-
 </html>

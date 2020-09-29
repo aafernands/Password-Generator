@@ -1,30 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@100&display=swap');
 
-body{
-    font-family: 'Courier Prime', monospace;
-background-color: gray;
-   
+body {
+	font-family: 'Courier Prime', monospace;
+	background-color: gray;
+	margin: 0px;
+	padding: 0px;
 }
 
-.header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    
- 
-}
-
-.content {
-    padding: 20px;
-    background-color:green;
-}
-
-.content:hover{
-    background-color:rgb(6, 255, 6);
+header {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	align-items: center;
 
 }
 
-.section {
+section {
+	background-color: rgb(0, 92, 128);
+	padding: 50px;
+	align-items: center;
+	
 
 }
+
+.passwordBox {
+	background-color: rgb(255, 255, 255);
+	border-style: rgb(85, 84, 84);
+	border-radius: 10px;
+	padding: 20px;
+	align-items: center;
+
+}
+
+h6 {
+	font-size: 15px;
+	padding: 15px;
+	margin: 0%;
+	background-color: #c7c7c7;
+}
+
+
+h2 {
+	color: rgb(0, 0, 0);
+}
+h4 {
+	font-family: 'Courier Prime', monospace;
+	background-color: rgb(216, 216, 216);
+	padding: 20px;
+	margin: 0px;
+}
+
+h4:hover {
+	font-family: 'Courier Prime', monospace;
+	background-color: rgb(216, 216, 216);
+	padding: 20px;
+	margin: 0px;
+}
+
+p {
+	font-family: 'Courier Prime', monospace;
+	font-size: 12px;
+}
+
+
+footer {
+	margin-top: 20px;
+}
+
+.button {
+	background-color: rgb(0, 92, 128);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	align-items: center;
+	font-size: 15px;
+	
+}
+
+
