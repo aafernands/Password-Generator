@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -18,7 +19,12 @@ body {
     background-color: #fff;
     display: block;
     margin: 8px;
-    background-image: linear-gradient(rgb(161, 37, 104), rgb(45, 16, 105));
+	background-image: linear-gradient(rgb(37 161 126), rgb(105 16 37));
+	
+
+	
+
+
     margin: 0px;
     padding: 0px;
 }
@@ -34,6 +40,7 @@ body {
 
 
 .container {
+	font-family: 'Play', sans-serif;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -81,7 +88,7 @@ form {
 	margin: 4px 2px;
 	cursor: pointer;
 	align-items: center;
-	font-size: 15px;
+	font-size: 11px;
 }
 
 
