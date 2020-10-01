@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
-</head>
-<body>
-    <header class="header">
-        <h1>PASSWORD GENERATOR</h1>
-    </header>
-    <section class="content">
-      
-        <div class="passwordBox" aria-placeholder="nada">
 
-            <h2>Message Information:</h2>
-            <!-- <form> -->
-                
-                <p>Your Message: </p>
-                <h6 id="yourMessage">
-                </h6>
-                <p>Number of characters allowed: </p>
-                <h6 id="messageLength">
-                </h6>
-                <p>Number of characters written: </p>
-                <h6 id="charactersCount">
-                </h6>
-                <p>Number of characters remaining: </p>
-                <h6 id="remainingCharacters">
-                </h6>
-            <!-- </form> -->
-            <br>
-            <button class ="button" onclick='myFunction()'>Click to Start</button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+
+                <h2>Generate a Password</h2>
+
+            </div>
+            <div class="card-body">
+
+                <textarea readonly id="displayPassword" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
+
+            </div>
+
+
+
+            <button id="newPassword" class="button" onclick='generateNewPassword();'>Generate Password</button>
+
         </div>
-        <footer>
-            <p><span class="credits-footer">© 2020  Designed by <a
-                        href="https://aafernands.github.io/">AlexFernandes</a></span></p>
-        </footer>
-    </section>
+    </div>
     <script src="index.js"></script>
 </body>
+
 </html>
