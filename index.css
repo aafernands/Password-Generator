@@ -5,12 +5,12 @@
 }
 
 html {
-    height: 100%;
+	height: 100%;
 }
 
 body {
     margin: 0;
-    font-family: 
+    font-family;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -20,24 +20,14 @@ body {
     display: block;
     margin: 8px;
 	background-image: linear-gradient(rgb(37 161 126), rgb(105 16 37));
-	
-
-	
-
-
     margin: 0px;
-    padding: 0px;
-}
-
-
-body {
-    height: 100%;
+	padding: 0px;
+	height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     align-items: center;
 }
-
 
 .container {
 	font-family: 'Play', sans-serif;
@@ -50,7 +40,11 @@ body {
 
 .card-container.card {
     max-width: 350px;
+	padding: 40px 40px;
+	max-width: 350px;
     padding: 40px 40px;
+    align-items: center;
+	text-align: center;
 }
 
 form {
@@ -58,26 +52,12 @@ form {
     margin-top: 0em;
 }
 
-.card-container.card {
-    max-width: 350px;
-    padding: 40px 40px;
-    align-items: center;
-	text-align: center;
-}
-
 .card {
     background-color: #F7F7F7;
     padding: 20px 25px 30px;
     margin: 0 auto 25px;
     margin-top: 50px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 
 .button {
     background-color: #bd2130;	
@@ -91,7 +71,6 @@ form {
 	font-size: 11px;
 }
 
-
 textarea {
 	background-color: rgb(255, 255, 255);
 	border-style: rgb(85, 84, 84);
@@ -102,4 +81,4 @@ textarea {
 
 .card-body {
 	min-height: 100px;
-}
+} 

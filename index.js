@@ -18,6 +18,7 @@ function generateNewPassword() {
 	if (lowers) {
 		password = password + 'qwertyuiopasdfghjklzxcvbnm';
 	}
+
 	if (numbers) {
 		password = password + '1234567890';
 	}
@@ -26,11 +27,13 @@ function generateNewPassword() {
 		password = password + '!@#$%^&*(){}[]=<>/,.';
 	}
 
+	var randomNumber = '';
+
 	for (var i = 0; i < length; i++) {
-		var password = Math.floor(Math.random() * length) + 1;
+		randomNumber += password.charAt(Math.floor(Math.random() * password.length));
 
-		document.getElementById('displayPassword').innerHTML = password;
 
-		console.log(password);
 	}
+
+	document.getElementById('displayPassword').innerHTML = randomNumber;
 }
