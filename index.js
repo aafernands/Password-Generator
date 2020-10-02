@@ -9,15 +9,19 @@ function generateNewPassword() {
 	var lowers = confirm('Would you like to use lowercase letters?');
 	var numbers = confirm('Would you like to use numbers?');
 	var password = '';
+	
 	if (uppers) {
 		password = password + 'QWERTYUIOPASDFGHJKLZXCVBNM';
 	}
+
 	if (lowers) {
 		password = password + 'qwertyuiopasdfghjklzxcvbnm';
 	}
+
 	if (numbers) {
 		password = password + '1234567890';
 	}
+
 	if (symbols) {
 		password = password + '!@#$%^&*(){}[]=<>/,.';
 	}
@@ -34,13 +38,14 @@ function generateNewPassword() {
 	document.getElementById('displayPassword').innerHTML = randomPassword;
 }
 
-var copy = document.querySelector('#copy');
-copy.addEventListener('click', function() {
-	copyPassword();
-});
+// var copy = document.querySelector('#copy');
 
-function copyPassword() {
-	document.getElementById('password').select();
-	document.execCommand('Copy');
-	alert('Password copied to clipboard!');
-}
+// copy.addEventListener('click', function() {
+// 	copyPassword();
+// });
+
+// function copyPassword() {
+// 	document.getElementById('password').select();
+// 	document.execCommand('Copy');
+// 	alert('Password copied to clipboard!');
+// }
