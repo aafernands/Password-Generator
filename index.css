@@ -128,3 +128,12 @@ h1 {
 	opacity: 1;
 	border-style: rgb(85, 84, 84);
 }
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+	#copyIcon {
+		right: -90px;	}
+}
