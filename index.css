@@ -39,7 +39,7 @@ body {
 	background-color: #fff;
 	display: block;
 	margin: 8px;
-	background-image: linear-gradient(rgb(37 161 126), rgb(105 16 37));
+	background-image: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
@@ -78,6 +78,7 @@ p {
 
 h1 {
 	align-items: center;
+	font-size: 30px;
 }
 
 .container-footer {
@@ -115,8 +116,8 @@ h1 {
 }
 
 #copyIcon {
-	font-size: 30px;
-	top: -47px;
+	font-size: 25px;
+	top: -44px;
 	right: -105px;
 	color: rgb(85, 84, 84);
 	opacity: 0.5;
@@ -129,11 +130,10 @@ h1 {
 	border-style: rgb(85, 84, 84);
 }
 
-
-
-
-
 @media only screen and (max-width: 500px) {
 	#copyIcon {
-		right: -90px;	}
+		right: -90px;
+		font-size: 30px;
+		top: -46px;
+	}
 }
