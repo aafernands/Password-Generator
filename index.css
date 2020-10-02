@@ -10,7 +10,6 @@ html {
 
 body {
     margin: 0;
-    font-family;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -59,7 +58,7 @@ form {
     margin-top: 50px;
 }
 
-.button {
+button {
     background-color: #bd2130;	
     border: none;
 	color: rgb(255, 254, 254);
@@ -75,10 +74,28 @@ textarea {
 	background-color: rgb(255, 255, 255);
 	border-style: rgb(85, 84, 84);
 	border-radius: 0px;
-	padding: 20px;
-	align-items: center;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 19px;
 }
 
 .card-body {
 	min-height: 100px;
 } 
+
+.fa-clipboard {
+    color: #bd2130;	
+    font-size: 40px;
+    position: fixed;
+    margin-top: 5px;
+}
+
+.fa-clipboard:hover {
+    color: #705e60;	
+    font-size: 40px;
+    position: fixed;
+    margin-top: 5px;
+}
+
