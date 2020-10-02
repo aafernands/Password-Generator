@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 *,
-::after,
-::before {
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
-html {
+html,
+body,
+.wrapper {
 	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 350px;
+	padding: 20px 20px;
+	padding: 40px 40px;
+	align-items: center;
+	text-align: center;
+	box-shadow: 2.5px 5px 4px #000000;
+	position: relative;
+	background-color: #f7f7f7;
+	font-family: 'Play', sans-serif;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 body {
@@ -30,45 +49,6 @@ body {
 	align-items: center;
 }
 
-.card-container.card {
-	max-width: 350px;
-	padding: 20px 20px;
-	padding: 40px 40px;
-	align-items: center;
-	text-align: center;
-	box-shadow: 2.5px 5px 4px #000000;
-	position: relative;
-}
-
-.card {
-	background-color: #f7f7f7;
-	padding: 20px 25px 30px;
-	margin: 0 auto 25px;
-	margin-top: 50px;
-	align-items: center;
-	max-width: 800px;
-}
-
-textarea {
-	background-color: rgb(255, 255, 255);
-	border-style: rgb(85, 84, 84);
-	border-radius: 0px;
-	padding: 10px;
-	margin: 20px;
-	align-items: center;
-	text-align: center;
-	font-size: 19px;
-}
-
-main {
-	font-family: 'Play', sans-serif;
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 button {
 	background-color: #c90f34;
 	border: none;
@@ -87,23 +67,21 @@ button:hover {
 	background-color: #dc143c;
 }
 
-.card-body {
+p {
+	margin-top: 40px;
+	font-size: 10px;
+}
+
+.container-body {
 	min-height: 100px;
+}
+
+h1 {
 	align-items: center;
 }
 
-.fa-clipboard {
-	color: #bd2130;
-	font-size: 40px;
-	position: fixed;
-	margin-top: 5px;
-}
-
-.fa-clipboard:hover {
-	color: #705e60;
-	font-size: 40px;
-	position: fixed;
-	margin-top: 5px;
+.container-footer {
+	text-align: center;
 }
 
 #displayPassword {
@@ -112,44 +90,41 @@ button:hover {
 	border-color: #e2e2e2;
 	color: rgb(2, 2, 2);
 	text-decoration: none;
-	padding: 14px 32px 0px 5px;
+	padding: 15px 40px 0px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
 	cursor: pointer;
 	font-size: 15px;
 	resize: none;
 	display: flex;
+	text-align: center;
+}
+
+.fa-clipboard {
+	color: #bd2130;
+	font-size: 20px;
+	position: absolute;
+	margin-top: 5px;
+}
+.fa-clipboard:hover {
+	color: #705e60;
+	font-size: 40px;
+	position: fixed;
+	margin-top: 5px;
 }
 
 #copyIcon {
-	font-size: 25px;
-	top: 160px;
-	right: 63px;
-	position: absolute;
+	font-size: 30px;
+	top: -47px;
+	right: -105px;
 	color: rgb(85, 84, 84);
 	opacity: 0.5;
 	cursor: pointer;
-	display: flex;
+	position: relative;
 }
 
 #copyIcon:hover {
 	opacity: 1;
 	border-style: rgb(85, 84, 84);
-}
-
-div {
-	position: relative;
-}
-
-p {
-	margin-top: 40px;
-	font-size: 10px;
-}
-
-
-.container {
-	font-family: 'Play', sans-serif;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    
 }
