@@ -102,38 +102,49 @@ h1 {
 	text-align: center;
 }
 
-.fa-clipboard {
-	color: #bd2130;
-	font-size: 20px;
-	position: absolute;
-	margin-top: 5px;
-}
-.fa-clipboard:hover {
-	color: #705e60;
-	font-size: 40px;
-	position: fixed;
-	margin-top: 5px;
-}
-
-#copyIcon {
+.copy {
 	font-size: 25px;
-	top: -44px;
+	top: -36px;
 	right: -105px;
 	color: rgb(85, 84, 84);
 	opacity: 0.5;
 	cursor: pointer;
 	position: relative;
+	width: 23px;
+	height: 23px;
 }
 
-#copyIcon:hover {
+.copy:hover {
 	opacity: 1;
 	border-style: rgb(85, 84, 84);
 }
 
 @media only screen and (max-width: 500px) {
-	#copyIcon {
+	.copy {
 		right: -90px;
 		font-size: 30px;
 		top: -46px;
 	}
+}
+
+.alertBox {
+	top: 0;
+	left: 0;
+	background: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
+	color: #fff;
+	text-align: center;
+	font-size: 4em;
+	display: none;
+	padding: 40px;
+
+}
+
+.alertBox.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
+	opacity: 0.9;
+	padding: 40px;
+
 }

@@ -21,22 +21,37 @@
                 <h2>PASSWORD GENERATOR</h>
             </div>
             <div class="container-body">
-                <textarea type = "text" readonly id="displayPassword"  placeholder="Your Secure Password"
+
+
+
+                <textarea type="text" readonly id="displayPassword" placeholder="Your Secure Password"
                     aria-label="Generated Password"></textarea>
-                <i id="copyIcon" class=" far fa-clipboard"></i>
+
+
+
+                <img src="assets/clipboard.png" class="copy" onclick="copyPassword()" alt="">
+
+
                 <div class="container-footer">
                     <button id="password" onclick='generateNewPassword();'>GENERATE PASSWORD</button>
+                    <div class="alertBox"></div>
 
                 </div>
+
+
             </div>
+
+
+
+
 
             <footer>
                 <p><span class="credits-footer">© 2020 Application Designed by <a
                             href="https://twitter.com/alexafernands">AlexFernandes</a></span></p>
             </footer>
         </div>
+
         <script src="index.js"></script>
-        <script src="https://kit.fontawesome.com/65bec092f8.js" crossorigin="anonymous"></script>
     </div>
 </body>
 

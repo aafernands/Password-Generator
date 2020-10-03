@@ -1,3 +1,5 @@
+var alertBox = document.querySelector('.alertBox');
+
 function generateNewPassword() {
 	var length = Number(prompt('How many characters would you like your password? Choose between 8 and 128'));
 	if (isNaN(length) || length < 8 || length > 128) {
@@ -9,7 +11,7 @@ function generateNewPassword() {
 	var lowers = confirm('Would you like to use lowercase letters?');
 	var numbers = confirm('Would you like to use numbers?');
 	var password = '';
-	
+
 	if (uppers) {
 		password = password + 'QWERTYUIOPASDFGHJKLZXCVBNM';
 	}
@@ -36,16 +38,17 @@ function generateNewPassword() {
 	}
 
 	document.getElementById('displayPassword').innerHTML = randomPassword;
+
+	alertBox.innerHTML = 'Your New Password Copied: <br>' + randomPassword;
 }
 
-// var copy = document.querySelector('#copy');
-
-// copy.addEventListener('click', function() {
-// 	copyPassword();
-// });
-
-// function copyPassword() {
-// 	document.getElementById('password').select();
-// 	document.execCommand('Copy');
-// 	alert('Password copied to clipboard!');
-// }
+function copyPassword() {
+	var copyPassText = document.getElementById('displayPassword');
+	copyPassText.select();
+	copyPassText.setSelectionRange(0, 9999);
+	document.execCommand('copy');
+	alertBox.classList.toggle('active');
+	setTimeout(function() {
+		alertBox.classList.toggle('active');
+	}, 2000);
+}
