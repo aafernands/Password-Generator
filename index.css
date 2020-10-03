@@ -29,6 +29,13 @@ body,
 	margin-left: auto;
 }
 
+@media only screen and (max-width: 500px) {
+	.container {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+
 body {
 	margin: 0;
 	font-size: 1rem;
@@ -121,15 +128,15 @@ h1 {
 
 @media only screen and (max-width: 500px) {
 	.copy {
-		right: -90px;
+		right: -99px;
 		font-size: 30px;
-		top: -46px;
+		top: -38px;
 	}
 }
 
 .alertBox {
 	position: fixed;
-	font-size: 20px;
+	font-size: 30px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -140,18 +147,15 @@ h1 {
 	text-align: center;
 	font-size: 4em;
 	display: none;
-	
-
 }
 
 .alertBox.active {
 	display: flex;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Play', sans-serif;
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
 	opacity: 0.9;
 	padding: 0px 40px;
-
 }
