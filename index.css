@@ -26,7 +26,6 @@ body,
 	padding: 20px;
 	margin: 40px auto;
 	border-radius: 5px;
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -83,8 +82,6 @@ p {
 
 .container-body {
 	min-height: 100px;
-	
-	
 }
 
 h1 {
@@ -110,7 +107,6 @@ h1 {
 	resize: none;
 	display: flex;
 	text-align: center;
-	
 }
 
 .copy {
