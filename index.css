@@ -17,19 +17,14 @@ body,
 
 .container {
 	max-width: 350px;
-	padding: 20px 20px;
-	padding: 40px 40px;
 	align-items: center;
 	text-align: center;
 	box-shadow: 2.5px 5px 4px #000000;
 	position: relative;
 	background-color: #f7f7f7;
 	font-family: 'Poppins', sans-serif;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-
+	padding: 20px;
+	margin: 40px auto;
 	border-radius: 5px;
 
 }
@@ -81,7 +76,7 @@ button:hover {
 }
 
 p {
-	margin-top: 80px;
+	margin-top: 60px;
 	font-size: 9px;
 	color: rgb(122, 122, 122);
 }
@@ -94,7 +89,6 @@ p {
 
 h1 {
 	align-items: center;
-	font-size: 30px;
 }
 
 .container-footer {
