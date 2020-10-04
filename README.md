@@ -23,7 +23,7 @@ The following gif video demonstrates the application functionality:
 
 ## Development
 
-The final project has been deployed to GitHub Pages. All links/buttons on this website works properly and some of the resources used on this project was:
+* The final project has been deployed to GitHub Pages. All links/buttons on this website works properly and some of the resources used on this project was:
     - FontAwesome (https://fontawesome.com/);
     - Bootstrap (https://getbootstrap.com/);
     - Google Fonts (https://fonts.google.com/);
