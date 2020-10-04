@@ -164,8 +164,8 @@ h1 {
 
 #parent #popup {
 	display: none;
-  }
-  
-  #parent:hover #popup {
+}
+
+#parent:hover #popup {
 	display: block;
-  }
+}
