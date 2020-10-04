@@ -23,7 +23,7 @@ body,
 	position: relative;
 	background-color: #f7f7f7;
 	font-family: 'Poppins', sans-serif;
-	padding: 20px;
+	padding: 40px;
 	margin: 40px auto;
 	border-radius: 5px;
 }
@@ -161,3 +161,11 @@ h1 {
 	opacity: 0.9;
 	padding: 0px 40px;
 }
+
+#parent #popup {
+	display: none;
+  }
+  
+  #parent:hover #popup {
+	display: block;
+  }

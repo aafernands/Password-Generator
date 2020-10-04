@@ -52,3 +52,5 @@ function copyPassword() {
 		alertBox.classList.toggle('active');
 	}, 2000);
 }
+
+
