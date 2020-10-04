@@ -18,11 +18,7 @@ In case of any invalid response the application would terminate and the user wou
 
 The following gif video demonstrates the application functionality:
 
-
 ![demo](assets/readme.gif)
-![demo](https://drive.google.com/file/d/10P_iLBW9dt3RQ-GyVb6kiS7AxjLV3P7h/viewgit)
-
-
 
 ## Development
 
