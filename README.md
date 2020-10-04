@@ -18,7 +18,11 @@ In case of any invalid response the application would terminate and the user wou
 
 The following gif video demonstrates the application functionality:
 
-https://drive.google.com/file/d/10P_iLBW9dt3RQ-GyVb6kiS7AxjLV3P7h/view
+
+![demo](assets/readme.gif)
+![demo](https://drive.google.com/file/d/10P_iLBW9dt3RQ-GyVb6kiS7AxjLV3P7h/viewgit)
+
+
 
 ## Development
 
@@ -29,7 +33,6 @@ The final project has been deployed to GitHub Pages. To cmplete the following st
     - Adobe Photoshop;
     - FontAwesome (https://fontawesome.com/);
     - Bootstrap (https://getbootstrap.com/);
-    - Placeholder (https://placeholder.com/);
     - Google Fonts (https://fonts.google.com/);
     - W3 Schools (https://www.w3schools.com/);
 * The final version was  pushed to homework repository at GitiHub at https://github.com/aafernands/password-generator;
