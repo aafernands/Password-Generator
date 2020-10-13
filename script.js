@@ -38,7 +38,6 @@ function generateNewPassword() {
 	}
 
 	document.getElementById('displayPassword').innerHTML = randomPassword;
-
 	alertBox.innerHTML = 'Your New Password Copied: <br>' + randomPassword;
 }
 
