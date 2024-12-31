@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 350px;
+    align-items: left;
+    text-align: left;
+    box-shadow: 2.5px 5px 4px #000000;
+    position: relative;
+    background-color: #1DA1F2;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    display: block;
+    margin: 8px;
+    background-image: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+button {
+    background-color: #c90f34;
+    border: none;
+    color: #fffefe;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #a10c2e;
+}
+
+.range-field {
+    margin-bottom: 20px;
+}
+
+.password-output {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#displayPassword {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    overflow: auto;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #555;
+    z-index: 1;
+}
+
+.copy-btn:hover {
+    color: #000;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.strength-level {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+.alertBox {
+    display: none;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

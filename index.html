@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="container-header">
-                <h2>PASSWORD GENERATOR</h2>
+            <!-- Header Section -->
+            <div class="header">
+                <h2>Password Generator</h2>
             </div>
+
+            <!-- Form Section -->
             <form id="password-form">
+                <!-- Length Slider -->
                 <div class="range-field">
-                    <label class="lengthStyle" for="lenght">Length: <span id="displayLenght">53</span></label>
-                    <input type="range" id="lenght" min="8" max="100" value="53"/>
+                    <label for="length">Length: <span id="displayLength">53</span></label>
+                    <input type="range" id="length" min="8" max="100" value="53">
                 </div>
 
-                <div>
+                <!-- Checkbox Options -->
+                <div class="checkbox-group">
                     <label>
                         <input type="checkbox" id="symbols">
-                        <span>Special Characters:</span>
+                        <span>Special Characters</span>
                     </label>
-                </div>
-
-                <div>
                     <label>
                         <input type="checkbox" id="uppers">
-                        <span>Uppercase Letters:</span>
+                        <span>Uppercase Letters</span>
                     </label>
-                </div>
-
-                <div>
                     <label>
                         <input type="checkbox" id="lowers">
-                        <span>Lowercase Letters:</span>
+                        <span>Lowercase Letters</span>
                     </label>
-                </div>
-
-                <div>
                     <label>
                         <input type="checkbox" id="numbers">
-                        <span>Numbers:</span>
+                        <span>Numbers</span>
                     </label>
                 </div>
             </form>
 
-            <div class="container-body">
-                <div class="password-output">
-                    <textarea readonly id="displayPassword" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-                    <button class="copy-btn" onclick="copyPassword()">
-                        <i class="fas fa-clipboard"></i> <!-- FontAwesome clipboard icon -->
-                    </button>
-                </div>
-                
-                <div class="container-footer">
-                    <button class="btn waves-effect waves-light" onclick="generateNewPassword()" id="password" type="button" name="action" alt="Button to click">Generate Password</button>
-                </div>
-                <div class="alertBox"></div>
+            <!-- Password Output -->
+            <div class="password-output">
+                <textarea readonly id="displayPassword" placeholder="Your Secure Password"></textarea>
+                <button class="copy-btn" onclick="copyPassword()">
+                    <i class="fas fa-clipboard"></i>
+                </button>
             </div>
+
+            <!-- Strength Bar -->
+            <div class="strength-bar">
+                <div id="strength" class="strength-level"></div>
+            </div>
+
+            <!-- Generate Button -->
+            <button class="btn" onclick="generateNewPassword()" type="button">Generate Password</button>
+
+            <!-- Footer -->
             <footer>
-                <p><span class="credits-footer">© <span id="current-year"></span> || Application Designed by <a href="https://twitter.com/fndslabs">Alex Fernandes</a></span></p>
+                <p>© <span id="current-year"></span> Designed by <a href="https://twitter.com/fndslabs">Alex Fernandes</a></p>
             </footer>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
