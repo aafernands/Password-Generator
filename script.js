@@ -55,6 +55,5 @@ function copyPassword() {
 
 
     const currentYear = new Date().getFullYear();
-    alert("Worked")
     document.getElementById('current-year').textContent = currentYear;
 
