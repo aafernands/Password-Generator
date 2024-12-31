@@ -1,7 +1,7 @@
 var alertBox = document.querySelector('.alertBox');
 
 function generateNewPassword() {
-	var length = Number(prompt('How many characters would you like your password? Choose between 8 and 128'));
+	var length = document.getElementById("lenght")
 	if (isNaN(length) || length < 8 || length > 128) {
 		alert("The length doesn't meet the requirements");
 		return;
