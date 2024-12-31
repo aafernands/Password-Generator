@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,32 +15,46 @@
 <body>
 
     <div class="wrapper">
+
         <div class="container">
             <div class="container-header">
                 <h2>PASSWORD GENERATOR</h2>
             </div>
             <form id="password-form">
-                <label for="lenght">Password Length:</label>
-                <input type="number" id="lenght" placeholder="Choose between 8 and 128 characters" min="8" max="128" required />
 
                 <div>
-                    <label for="symbols">Include Special Characters:</label>
-                    <input type="checkbox" id="symbols">
+                    <label for="lenght">Length:</label>
+                    <input type="number" id="lenght" placeholder="Choose between 8 and 128 characters" min="8" max="128"
+                        required />
                 </div>
 
                 <div>
-                    <label for="uppers">Include Uppercase Letters:</label>
-                    <input type="checkbox" id="uppers">
+                    <label>
+                        <input type="checkbox" id="symbols">
+                        <span>Special Characters:</span>
+                    </label>
                 </div>
 
                 <div>
-                    <label for="lowers">Include Lowercase Letters:</label>
-                    <input type="checkbox" id="lowers">
+                    <label>
+                        <input type="checkbox" id="uppers">
+                        <span>Uppercase Letters:</span>
+                    </label>
                 </div>
 
                 <div>
-                    <label for="numbers">Include Numbers:</label>
-                    <input type="checkbox" id="numbers">
+                    <label>
+                        <input type="checkbox" id="lowers">
+                        <span>Lowercase Letters:</span>
+                    </label>
+                </div>
+
+                <div>
+
+                    <label>
+                        <input type="checkbox" id="numbers">
+                        <span>Numbers:</span>
+                    </label>
                 </div>
             </form>
 
@@ -46,18 +62,26 @@
                 <span title="Click Generate Now to start!">
                     <textarea readonly id="displayPassword" placeholder="Your Secure Password"
                         aria-label="Generated Password" onclick="copyPassword()"></textarea>
-                    <img src="assets/clipboard.png" class="copy" onclick="copyPassword()" alt=""></span>
+                    <!-- <i class="content_copy">Copy</i> -->
+                    <img src="assets/clipboard.png" class="copy" onclick="copyPassword()"></span>
                 <div class="container-footer">
-                    <button type="button" id="password" onclick='generateNewPassword();'>GENERATE NOW</button>
+
+                    <button class="btn waves-effect waves-light" onclick='generateNewPassword()' id="password"
+                        type="button" name="action" alt="Button to click">Generate Passoword
+                        <i class="material-icons right"></i>
+                    </button>
                 </div>
                 <div class="alertBox"></div>
             </div>
             <footer>
-                <p><span class="credits-footer">© <span id="current-year"></span> || Application Designed by <a href="https://twitter.com/fndslabs">Alex Fernandes</a></span></p>
+                <p><span class="credits-footer">© <span id="current-year"></span> || Application Designed by <a
+                            href="https://twitter.com/fndslabs">Alex Fernandes</a></span></p>
             </footer>
         </div>
     </div>
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -17,8 +17,8 @@ body,
 
 .container {
 	max-width: 350px;
-	align-items: center;
-	text-align: center;
+	align-items: left;
+	text-align: left;
 	box-shadow: 2.5px 5px 4px #000000;
 	position: relative;
 	background-color: #f7f7f7;
