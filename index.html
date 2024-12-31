@@ -28,10 +28,16 @@
                 </div>
                 <div class="alertBox"></div>
             </div>
-            <footer>
-                <p><span class="credits-footer">© 2020 Application Designed by <a
-                            href="https://twitter.com/alexafernands">AlexFernandes</a></span></p>
-            </footer>
+<footer>
+    <p><span class="credits-footer">© <span id="current-year"></span> Application Designed by <a href="https://twitter.com/alexafernands">AlexFernandes</a></span></p>
+</footer>
+
+<script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    // Set the year in the footer
+    document.getElementById('current-year').textContent = currentYear;
+</script>
         </div>
         <script src="script.js"></script>
     </div>
