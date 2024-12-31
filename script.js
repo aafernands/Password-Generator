@@ -51,3 +51,10 @@ function copyPassword() {
 		alertBox.classList.toggle('active');
 	}, 2000);
 }
+
+
+
+    const currentYear = new Date().getFullYear();
+    alert("Worked")
+    document.getElementById('current-year').textContent = currentYear;
+
