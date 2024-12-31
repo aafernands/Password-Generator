@@ -4,172 +4,136 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body,
 .wrapper {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-	max-width: 350px;
-	align-items: left;
-	text-align: left;
-	box-shadow: 2.5px 5px 4px #000000;
-	position: relative;
-	background-color: gray;
-	color: white;
-	font-family: 'Poppins', sans-serif;
-	padding: 40px;
-	margin: 40px auto;
-	border-radius: 5px;
+    max-width: 350px;
+    align-items: left;
+    text-align: left;
+    box-shadow: 2.5px 5px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    background-color: #ffffff;
+    color: #1da1f2; /* Twitter Blue */
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed; /* Light gray border */
 }
 
 @media only screen and (max-width: 500px) {
-	.container {
-		margin-right: 20px;
-		margin-left: 20px;
-	}
+    .container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
 
 body {
-	margin: 0;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	text-align: left;
-	background-color: #fff;
-	display: block;
-	margin: 8px;
-	background-image: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
-	
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	align-items: center;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #14171a; /* Dark Gray (almost black) for text */
+    text-align: left;
+    background-color: #f5f8fa; /* Light background color */
+    display: block;
+    margin: 8px;
+    background-image: linear-gradient(45deg, #1da1f2, #a9cfe7); /* Twitter gradient */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
 }
 
 button {
-	background-color: #c90f34;
-	border: none;
-	color: #fffefe;
-	padding: 15px 32px;
-	text-decoration: none;
-	margin: 4px 2px;
-	cursor: pointer;
-	align-items: center;
-	font-size: 11px;
-	position: relative;
-	flex-wrap: wrap;
-	border-radius: 5px;
+    background-color: #1da1f2; /* Twitter Blue */
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-	background-color: #dc143c;
+    background-color: #1991db; /* Slightly darker blue on hover */
 }
 
-p {
-	margin-top: 60px;
-	font-size: 9px;
-	color: rgb(122, 122, 122);
+.range-field {
+    margin-bottom: 20px;
 }
 
-.container-body {
-	min-height: 100px;
-}
-
-h1 {
-	align-items: center;
-}
-
-.container-footer {
-	text-align: center;
+.password-output {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 #displayPassword {
-	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
-	border-color: #e2e2e2;
-	color: rgb(2, 2, 2);
-	text-decoration: none;
-	padding: 15px 40px 0px 10px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	cursor: pointer;
-	font-size: 15px;
-	resize: none;
-	display: flex;
-	text-align: center;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #14171a; /* Dark Gray text */
+    background-color: #ffffff;
+    border: 1px solid #ccd6dd; /* Light border */
+    border-radius: 4px;
+    resize: none;
+    overflow: auto; /* Make the textarea scrollable if the content overflows */
+    word-wrap: break-word; /* Prevent long words from breaking the layout */
+    white-space: pre-wrap; /* Ensure that line breaks in the password are respected */
+    padding-right: 40px; /* Make space for the clipboard icon */
 }
 
-.copy {
-	font-size: 25px;
-	top: -36px;
-	right: -105px;
-	color: rgb(85, 84, 84);
-	opacity: 0.5;
-	cursor: pointer;
-	position: relative;
-	width: 28px;
-	height: 24px;
+.copy-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #657786; /* Dark gray for the icon */
+    z-index: 1; /* Ensure the icon stays above the textarea */
 }
 
-.copy:hover {
-	opacity: 1;
-	border-style: rgb(85, 84, 84);
-}
-
-@media only screen and (max-width: 500px) {
-	.copy {
-		right: -92px;
-		top: -40px;
-		width: 28px;
-		height: 24px;
-		font-size: 30px;
-	}
+.copy-btn:hover {
+    color: #1da1f2; /* Change icon color to Twitter Blue on hover */
 }
 
 .alertBox {
-	position: fixed;
-	font-size: 30px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	font-family: 'Play', sans-serif;
-	background: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
-	color: #fff;
-	text-align: center;
-	font-size: 4em;
-	display: none;
+    display: none;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    margin-top: 10px;
+    border-radius: 4px;
 }
 
-.alertBox.active {
-	display: flex;
-	font-size: 30px;
-	font-family: 'Play', sans-serif;
-	justify-content: center;
-	align-items: center;
-	background: linear-gradient(45deg, rgb(37 161 126), rgb(105 16 37));
-	opacity: 0.9;
-	padding: 0px 40px;
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #657786; /* Dark gray footer text */
 }
 
-#parent #popup {
-	display: none;
+footer a {
+    color: #1da1f2; /* Twitter Blue */
+    text-decoration: none;
 }
 
-#parent:hover #popup {
-	display: block;
-}
-
-
-.lengthStyle{
-	color: white;
+footer a:hover {
+    text-decoration: underline;
 }
