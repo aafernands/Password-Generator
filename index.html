@@ -8,43 +8,57 @@
     <title>Password Generator</title>
 
     <link rel="stylesheet" href="style.css" />
-
 </head>
 
 <body>
 
     <div class="wrapper">
-        <div class=" container">
-            <div class="containe-header">
+        <div class="container">
+            <div class="container-header">
                 <h2>PASSWORD GENERATOR</h2>
             </div>
-            <form >
-                <label for="pswLenght">Password Lenght:</form>
-                <input type="number" id="lenght" placeholder="Choose between 8 and 128 characters" />
-            
-                <label for="pswLenght">Password Lenght:</form>
-                <input type="number" id="lenght" placeholder="Choose between 8 and 128                 
-                
-                <label for="pswLenght">Password Lenght:</form>
-                <input type="number" id="lenght" placeholder="Choose between 8 and 128 characters" />
+            <form id="password-form">
+                <label for="lenght">Password Length:</label>
+                <input type="number" id="lenght" placeholder="Choose between 8 and 128 characters" min="8" max="128" required />
+
+                <div>
+                    <label for="symbols">Include Special Characters:</label>
+                    <input type="checkbox" id="symbols">
+                </div>
+
+                <div>
+                    <label for="uppers">Include Uppercase Letters:</label>
+                    <input type="checkbox" id="uppers">
+                </div>
+
+                <div>
+                    <label for="lowers">Include Lowercase Letters:</label>
+                    <input type="checkbox" id="lowers">
+                </div>
+
+                <div>
+                    <label for="numbers">Include Numbers:</label>
+                    <input type="checkbox" id="numbers">
+                </div>
             </form>
+
             <div class="container-body">
                 <span title="Click Generate Now to start!">
-                    <textarea  readonly id="displayPassword" placeholder="Your Secure Password"
+                    <textarea readonly id="displayPassword" placeholder="Your Secure Password"
                         aria-label="Generated Password" onclick="copyPassword()"></textarea>
                     <img src="assets/clipboard.png" class="copy" onclick="copyPassword()" alt=""></span>
                 <div class="container-footer">
-                    <button id="password" onclick='generateNewPassword();'>GENERATE NOW</button>
+                    <button type="button" id="password" onclick='generateNewPassword();'>GENERATE NOW</button>
                 </div>
                 <div class="alertBox"></div>
             </div>
-<footer>
-    <p><span class="credits-footer">© <span id="current-year"></span> | Application Designed by <a href="https://twitter.com/fndslabs">AlexFernandes</a></span></p>
-</footer>
-
+            <footer>
+                <p><span class="credits-footer">© <span id="current-year"></span> | Application Designed by <a href="https://twitter.com/fndslabs">Alex Fernandes</a></span></p>
+            </footer>
         </div>
-        <script src="script.js"></script>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
