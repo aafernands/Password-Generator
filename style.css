@@ -21,7 +21,8 @@ body,
 	text-align: left;
 	box-shadow: 2.5px 5px 4px #000000;
 	position: relative;
-	background-color: #f7f7f7;
+	background-color: gray;
+	color: white;
 	font-family: 'Poppins', sans-serif;
 	padding: 40px;
 	margin: 40px auto;
