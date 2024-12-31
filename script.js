@@ -1,8 +1,17 @@
-var alertBox = document.querySelector('.alertBox');
+const displayLenght = document.getElementById("displayLenght");
+const lengthInput = document.getElementById("lenght");
+
+// Set the initial display value to the default range value (53)
+displayLenght.textContent = lengthInput.value;
+
+// Display the length value as the range slider is adjusted
+lengthInput.addEventListener('input', function() {
+    displayLenght.textContent = lengthInput.value; // Update the span text with the current value of the slider
+});
 
 function generateNewPassword() {
-    var length = document.getElementById("lenght").value;
-    if (isNaN(length) || length < 8 || length > 128) {
+    var length = lengthInput.value; // Get the value from the range input
+    if (isNaN(length) || length < 8 || length > 100) {
         alert("The length doesn't meet the requirements");
         return;
     }
@@ -26,7 +35,7 @@ function generateNewPassword() {
     }
 
     if (symbols) {
-        password += '!@#$%^&*(){}[]=<>/,.';
+        password += '!@#$%^&*(){}[]=<>/,.'; 
     }
 
     if (!symbols && !numbers && !uppers && !lowers) {
