@@ -2,6 +2,7 @@ var alertBox = document.querySelector('.alertBox');
 
 function generateNewPassword() {
 	var length = document.getElementById("lenght")
+	lenght = lenght.value
 	if (isNaN(length) || length < 8 || length > 128) {
 		alert("The length doesn't meet the requirements");
 		return;
