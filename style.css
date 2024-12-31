@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* Wrapper */
@@ -16,85 +17,92 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 
 /* Container */
 .container {
     background-color: #1e1e1e;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
+    margin: auto;
 }
 
 /* Header */
 .header h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #00acee;
 }
 
 /* Range Field */
 .range-field {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .range-field label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 14px;
 }
 
 /* Checkbox Group */
 .checkbox-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 /* Password Output */
 .password-output {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .password-output textarea {
     flex: 1;
     height: 40px;
     padding: 10px;
-    border: 1px solid #333;
+    border: 1px solid #444;
     border-radius: 5px;
-    background-color: #2a2a2a;
+    background-color: #2b2b2b;
     color: #e6e6e6;
     resize: none;
 }
 
-.password-output .copy-btn {
+.password-output button {
     margin-left: 10px;
     padding: 10px;
-    border: none;
     background-color: #00acee;
     color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.password-output button:hover {
+    background-color: #008ac1;
 }
 
 /* Strength Bar */
 .strength-bar {
     height: 10px;
-    background-color: #2a2a2a;
+    background-color: #333;
     border-radius: 5px;
-    margin-bottom: 20px;
     overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .strength-level {
     height: 100%;
     width: 0%;
     background-color: #ff4d4d;
-    transition: width 0.3s, background-color 0.3s;
+    transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 /* Button */
@@ -105,15 +113,26 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #008ac1;
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
     font-size: 12px;
+    color: #888;
 }
 
 footer a {
     color: #00acee;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #008ac1;
 }
