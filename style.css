@@ -40,6 +40,7 @@ body {
 /* Range Field */
 .range-field {
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .range-field label {
@@ -54,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    text-align: center;
 }
 
 /* Password Output */
@@ -135,4 +137,15 @@ footer a {
 
 footer a:hover {
     color: #008ac1;
+}
+
+
+@media (max-width: 600px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+    }
 }
